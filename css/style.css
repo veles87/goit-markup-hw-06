@@ -1127,6 +1127,9 @@ footer {
 
   width: 528px;
   height: 581px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1172,6 +1175,18 @@ footer {
 .buttom-close:hover .icon-close,
 .buttom-close:focus .icon-close {
   stroke: var(--hover-color);
+}
+/*form*/
+.form-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-top: 0;
 }
 /*Выезэающий синий фон*/
 .card-thumb {

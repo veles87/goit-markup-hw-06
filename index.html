@@ -82,15 +82,20 @@
         <use href="./images/close-new.svg#icon-close"></use>
     </svg>
 </button>
-      <!--  <a href="" data-close-modal class="iconns" >
-            <img src="./images/close.png" alt="" width="30" height="30" class="close">
+     <form> 
+         <h3>Оставьте свои данные, мы вам перезвоним</h3>
+         <label for="name">Имя</label>
+         <input type="text" name="name" id="name">
 
-  
-        </a> -->
+        <label for="phone">Телефон</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail">
+        <button type="submit">Отправить</button>
+     </form>
        
-        <p class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit nemo odio vitae optio. Optio
-            in distinctio nam dicta laudantium, itaque magni, et ipsa officia commodi quaerat. Odio, quia officia.</p>
-    </div>
+         </div>
         </div>
         </section>
        
@@ -429,7 +434,27 @@
 
 
 <script src="./js/modal.js"></script>
+<script>
+    (() => {
 
+        document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+
+                e.preventDefault();
+
+
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+
+                    console.log(`${name}: ${value}`),
+
+                );
+
+            });
+
+    })();
+</script>
 </body>
 
 

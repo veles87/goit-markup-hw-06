@@ -22,13 +22,12 @@ p {
   padding-left: 0;
   margin: 0;
 }
-
 .link {
   text-decoration: none;
   color: inherit;
-
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -51,6 +50,7 @@ img {
   --card-shadow-hover: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --card-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.12);
   --foto-bg-color: rgba(47, 48, 58, 0.8);
+  --animation: 300ms ease-in;
 }
 
 .body {
@@ -232,6 +232,9 @@ header {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .saite-contacts:hover,
 .saite-contacts:focus {
@@ -422,9 +425,10 @@ header {
   text-transform: uppercase;
 
   color: #ffffff;
-  padding-top: 27px;
-  margin-bottom: 0px;
-  padding-left: 83px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*our-team*/
 
@@ -557,6 +561,10 @@ h3 {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sections {
   margin-top: 94px;
@@ -694,6 +702,9 @@ footer {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
@@ -754,13 +765,14 @@ footer {
 }
 
 .card-footer {
+  width: 231px;
   flex-basis: calc((50% - 45px) / 2);
 }
 .card-footer:last-child {
   flex-basis: calc(50% - 15px);
 }
 .social-networks {
-  margin-left: 70px;
+  width: 206px;
   padding-top: 15px;
 }
 
@@ -776,6 +788,9 @@ footer {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks-list:not(:last-child) {
   margin-right: 10px;
@@ -791,6 +806,8 @@ footer {
 }
 
 .address {
+  display: block;
+  width: 231px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -806,6 +823,8 @@ footer {
 }
 
 .address-item {
+  width: 225px;
+  margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -934,6 +953,9 @@ footer {
   min-width: 73px;
   padding: 6px 22px;
   cursor: pointer;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -1129,9 +1151,7 @@ footer {
 
   width: 528px;
   height: 581px;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 40px 40px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1178,18 +1198,6 @@ footer {
 .buttom-close:focus .icon-close {
   stroke: var(--hover-color);
 }
-/*form*/
-.form-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-top: 0;
-}
 /*Выезэающий синий фон*/
 .card-thumb {
   position: relative;
@@ -1221,16 +1229,55 @@ footer {
   height: 294px;
 
   transform: translateY(100%);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
 }
 
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-overlay > p {
+  padding: 63px 24px;
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.portfolios-link:hover .project-overlay,
+.portfolios-link:focus .project-overlay {
+  transform: translateY(0);
+  background-color: rgba(33, 150, 243, 0.9);
+}
 .portfolios-link:hover .card-overlay,
 .portfolios-link:focus .card-overlay {
   transform: translateY(0);
-  opacity: 2;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
 }
 .portfolios-link:hover,
 .portfolios-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.form-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

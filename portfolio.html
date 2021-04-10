@@ -362,9 +362,19 @@
                 </ul>
 
             </div>
-            <!--<div class="card-footer">
-    <p>Подпишитесь на рассылку</p>
-</div>-->
+            <div class="card-footer position-join">
+                <h4 class="join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
+                <form name="footer-form" class="footer-form" novalidate>
+                    <label for="user_email" class="footer-form-lable">
+                        <input placeholder="E-mail" type="email" name="email" class="footer-form-input" id="user_email" />
+                    </label>
+                    <button type="submit" class="btn footer-form-submit">
+                        Подписаться
+                        <svg class="social-icon-footer" width="24" height="24">
+                            <use href="./images/svg/form-icon.svg#icon-send"></use>
+                        </svg>
+                    </button>
+            </div>
         </div>
     </footer>
 </body>

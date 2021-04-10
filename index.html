@@ -71,10 +71,10 @@
     <main>
 
         <section class="hero">
-
+<div class="container">
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
             <button type="button" class="buttons" data-modal-open><span class="buts">Заказать услугу</span></button>
-
+</div>
 
         </section>
 
@@ -408,9 +408,19 @@
                 </ul>
 
             </div>
-            <!--<div class="card-footer">
-    <p>Подпишитесь на рассылку</p>
-</div>-->
+            <div class="card-footer position-join">
+   <h4 class="join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
+<form name="footer-form" class="footer-form" novalidate>
+    <label for="user_email" class="footer-form-lable">
+        <input placeholder="E-mail" type="email" name="email" class="footer-form-input" id="user_email" />
+    </label>
+    <button type="submit" class="btn footer-form-submit">
+        Подписаться
+        <svg class="social-icon-footer" width="24" height="24">
+            <use href="./images/svg/form-icon.svg#icon-send"></use>
+        </svg>
+    </button>
+            </div>
         </div>
     </footer>
     <!--modal windows-->
@@ -422,19 +432,123 @@
                 <use href="./images/close-new.svg#icon-close"></use>
             </svg>
         </button>
-        <form>
+       <!-- <form >
+            <div class="form">
             <h3 class="form-text">Оставьте свои данные, мы вам перезвоним</h3>
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name">
+        <div class="oll-form-field">
+            <div class="form-field">
+                <label for="name" class="form-label">Имя</label>
+                <svg class="icon icon-form" width="18" height="18">
+                    <use href="./images/svg/form-icon.svg#person-black" >
+                    </use>
+                </svg>
+                <input type="text" name="name" id="name" class="form-input" autofocus>
+           
+            </div>
 
-            <label for="phone">Телефон</label>
-            <input type="tel" name="phone" id="phone">
+            <div class="form-field">
+            <label for="phone" class="form-label">Телефон</label>
+            <svg class="icon icon-form" width="18" height="18">
+                <use href="./images/svg/form-icon.svg#phone-black">
+                </use>
+            </svg>
+            <input type="tel" name="phone" id="phone" class="form-input" autofocus>
+            </div>
 
-            <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail">
+            <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <svg class="icon icon-form" width="18" height="18">
+                <use href="./images/svg/form-icon.svg#email-black">
+                </use>
+            </svg>
+            <input type="email" name="mail" id="mail" class="form-input" autofocus>
+            </div>
+
+            <div class="form-field">
+            <label for="feedback" class="form-label">Комментарий </label>
+                <textarea name="feedback" rows="8" placeholder="Введите текст" id="feedback" class="form-feedback"></textarea>
+            </div>
+
+        </div>
+            <div class="form-policy">
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link ">Условия договора</a></label>
+             </div>  
+            
             <button type="submit">Отправить</button>
+            </div>
         </form>
+    -->
+<form class="modal-form">
+    <h3 class="modal-title">
+        Оставьте свои данные, мы вам перезвоним
+    </h3>
 
+    <div class="modal-unit">
+        <div class="modal-unit-group">
+            <input type="text" name="user-name" id="user-name" class="modal-unit-input" placeholder=" " />
+            <svg class="modal-unit-icon" width="18" height="18">
+                <use href="./images/svg/form-icon.svg#person-black">
+                </use>
+            </svg>
+
+            <label for="user-name" class="modal-lable">
+                Имя
+            </label>
+        </div>
+    </div>
+
+    <div class="modal-unit">
+        <div class="modal-unit-group">
+            <input type="tel" name="user-tel" id="user-tel" class="modal-unit-input" placeholder=" " />
+            <svg class="modal-unit-icon" width="18" height="18">
+                <use href="./images/svg/form-icon.svg#phone-black">
+                </use>
+            </svg>
+
+            <label for="user-tel" class="modal-lable">
+                Телефон
+            </label>
+        </div>
+    </div>
+
+    <div class="modal-unit">
+        <div class="modal-unit-group">
+            <input type="email" name="user-mail" id="user-mail" class="modal-unit-input" placeholder=" " />
+            <svg class="modal-unit-icon" width="18" height="18">
+                <use href="./images/svg/form-icon.svg#email-black">
+                </use>
+            </svg>
+
+            <label for="user-mail" class="modal-lable">
+                Почта
+            </label>
+        </div>
+    </div>
+
+    <div class="modal-unit">
+        <textarea name="user-comment" id="user-comment" class="user-comment" rows="8" placeholder=" "></textarea>
+        <label for="user-comment" class="modal-aria-lable">
+            Комментарий
+        </label>
+    </div>
+
+        
+       <!-- <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="cub">
+        <label for="modal-checkbox" class="modal-checkbox-policy">Соглашаюсь с рассылкой и принимаю&nbsp; <a href="" class="modal-link" id="modal-link"> Условия договора</a></label>-->
+       
+<label for="modal-checkbox" class="modal-checkbox-policy">
+    <input type="checkbox" name="modal-checkbox" class="modal-checkbox" id="modal-checkbox" />
+    <span class="checkbox-icon-span"></span>
+
+    Соглашаюсь с рассылкой и принимаю&nbsp;
+    <a href="" class="modal-link" id="modal-link"> Условия договора</a>
+</label>
+
+    <button type="submit" id="form-submit" class="btn btn-modal">
+        Отправить
+    </button>
+</form>
     </div>
 </div>
 <script src="./js/modal.js"></script>

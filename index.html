@@ -13,53 +13,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css"
         integrity="sha512-oxqL25oMBPTFLK5OOR4U/Y//5oyc+3B8MJVTuGD2FLdyA+VXlhKMyQ7YjHNSI5+CLk0UdMLw1lV64dDuT1Batw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
 
 </head>
 
 <body>
-    <!--шапка-->
+    <!--header-->
     <header>
 
 
-        <nav class="conteiner-header main-nav">
+        <nav class="header-conteiner">
             <a href="" class="logo">Web<span class="logotip">Studio</span></a>
             <ul class="menu-nav list">
-                <li class="item link">
-                    <a href="./index.html" class="saite-nav1 link-current link">Студия</a>
+                <li class="menu-nav__item link">
+                    <a href="./index.html" class="saite-nav link-current link">Студия</a>
                 </li>
-                <li class="item link">
-                    <a href="./portfolio.html" class="saite-nav1 link">Портфолио</a>
+                <li class="menu-nav__item link">
+                    <a href="./portfolio.html" class="saite-nav link">Портфолио</a>
                 </li>
-                <li class="item link">
-                    <a href="" class="saite-nav1 link">Контакты</a>
+                <li class="menu-nav__item link">
+                    <a href="" class="saite-nav link">Контакты</a>
                 </li>
             </ul>
 
             <ul class="contacts list">
 
-                <li class="item link ">
-
-
+                <li class="contacts__item link ">
                     <a href="mailto:info@devstudio.com" class="saite-contacts">
                         <svg class="icon-mail ">
                             <use href=".//images/svg/clients.svg#envelope"></use>
 
-                        </svg>
-                        info@devstudio.com</a>
-
+                        </svg> info@devstudio.com
+                    </a>
                 </li>
-
-
-                <li class="item link ">
-
+                <li class="contacts__item link ">
                     <a href="tel:+380961111111" class="saite-contacts ">
                         <svg class="icon-phone">
                             <use href=".//images/svg/clients.svg#smartphone"></use>
-
-                        </svg>
-                        +38 096 111 11 11 </a>
+                        </svg>+38 096 111 11 11
+                    </a>
                 </li>
 
             </ul>
@@ -71,59 +64,59 @@
     <main>
 
         <section class="hero">
-<div class="container">
-            <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
-            <button type="button" class="buttons" data-modal-open><span class="buts">Заказать услугу</span></button>
-</div>
+          
+                <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
+                <button type="button" class="hero__button" data-modal-open><span class="hero__button-text">Заказать услугу</span></button>
+            
 
         </section>
 
         <!-- Наше преимущество-->
-        <section class="section-about-us">
-            <div class="section">
+        <section class="section">
+           
                 <h2></h2>
-                <ul class="about-us">
-                    <li class=" feature1 feature-icon">
+                <ul class="section-about-us">
+                    <li class=" section-about-us__feature feature-icon icon-antenna">
 
-                        <h3 class="section-about-us-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                        <h3 class="section-about-us__title ">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="feature1 feature-icon">
-                        <h3 class="section-about-us-title">ПУНКТУАЛЬНОСТЬ</h3>
+                    <li class="section-about-us__feature feature-icon icon-clock">
+                        <h3 class="section-about-us__title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="feature1 feature-icon">
+                    <li class="section-about-us__feature feature-icon icon-diagram">
 
-                        <h3 class="section-about-us-title">ПЛАНИРОВАНИЕ</h3>
+                        <h3 class="section-about-us__title">ПЛАНИРОВАНИЕ</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="feature1 feature-icon">
+                    <li class="section-about-us__feature feature-icon icon-astronaut" >
 
-                        <h3 class="section-about-us-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                        <h3 class="section-about-us__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
-            </div>
+            
         </section>
         <!--Чем мы занимаемся-->
-        <section class="container ">
-            <!--Чем мы занимаемся-->
+        <section class="our-works ">
+     
 
-            <h2 class="what-we-do list">Чем мы занимаемся</h2>
-            <ul class="block-title ">
-                <li class="grid-title">
+            <h2 class="our-works__title list">Чем мы занимаемся</h2>
+            <ul class="our-works__block ">
+                <li class="our-works__card">
 
                     <img src="./images/img.jpg" alt="набор кода" width="370">
-                    <p class="card-bg text">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                    <p class="our-works__card-bg ">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</p>
 
                 </li>
-                <li class="grid-title">
+                <li class="our-works__card">
                     <img src="./images/img1.jpg" alt="мобильное устройство" width="370">
-                    <p class="card-bg text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                    <p class="our-works__card-bg ">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
-                <li class="grid-title">
+                <li class="our-works__card">
                     <img src="./images/img2.jpg" alt="цветовая палитра" width="370">
-                    <p class="card-bg text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                    <p class="our-works__card-bg ">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </li>
             </ul>
 
@@ -131,17 +124,17 @@
         <!--Наша команда-->
 
 
-        <div class="banners">
-            <section class="container section">
+        <div class="our-team__bc">
+            <section class="our-team section">
 
-                <h2 class="we-1">Наша команда</h2>
-                <ul class="our-team list">
+                <h2 class="our-team__heading">Наша команда</h2>
+                <ul class="our-team__list list">
 
-                    <li class="team">
+                    <li class="our-team__item">
                         <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270">
-                        <h3>Игорь Демьяненко</h3>
-                        <p class="ihor1">Product Designer</p>
-                        <ul class="social-team">
+                        <h3 >Игорь Демьяненко</h3>
+                        <p >Product Designer</p>
+                        <ul class="our-team__social">
                             <li class="social-icon-link links">
                                 <a href="" class="social-icon-link link">
                                     <svg class="team-icon ">
@@ -177,11 +170,11 @@
                         </ul>
                     </li>
 
-                    <li class="team teams ">
+                    <li class="our-team__item teams ">
                         <img src="./images/img5.jpg" alt="Ольга Репина" width="270">
                         <h3>Ольга Репина</h3>
-                        <p class="ihor1">Frontend Developer</p>
-                        <ul class="social-team">
+                        <p>Frontend Developer</p>
+                        <ul class="our-team__social">
                             <li class="social-icon-link ">
                                 <a href="" class="social-icon-link link">
                                     <svg class="team-icon ">
@@ -216,11 +209,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team teams">
+                    <li class="our-team__item teams">
                         <img src="./images/img6.jpg" alt="Николай Тарасов" width="270">
                         <h3>Николай Тарасов</h3>
-                        <p class="ihor1">Marketing</p>
-                        <ul class="social-team">
+                        <p>Marketing</p>
+                        <ul class="our-team__social">
                             <li class="social-icon-link">
                                 <a href="" class="social-icon-link link">
                                     <svg class="team-icon ">
@@ -255,11 +248,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team teams">
+                    <li class="our-team__item teams">
                         <img src="./images/img7.jpg" alt="Михаил Ермаков" width="270">
                         <h3>Михаил Ермаков</h3>
-                        <p class="ihor1">UI Designer</p>
-                        <ul class="social-team">
+                        <p>UI Designer</p>
+                        <ul class="our-team__social">
                             <li class="social-icon-link">
                                 <a href="" class="social-icon-link link">
                                     <svg class="team-icon ">
@@ -299,7 +292,7 @@
             </section>
         </div>
 
-
+        <!--Наши клиенты-->>
         <section class="client-position sections">
             <div class="hh">
                 <h2 class="position">Постоянные клиенты</h2>
@@ -354,10 +347,10 @@
         </section>
 
     </main>
-    <!--подвал-->
+    <!--footer-->
 
     <footer class="footer">
-        <div class="container our-contacts">
+        <div class="footer__container our-contacts">
             <div class="card-footer">
                 <a class="link logos" href="./index.html"><span class="logo-color">Web</span>Studio</a>
                 <a class="address link" href="https://goo.gl/maps/kpo2gFMixc3sEq3g6" rel="noopener noreferrer nofollow"
@@ -410,179 +403,109 @@
             </div>
             <div class="card-footer position-join">
                 <h4 class="join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
-                    <form class="footer-form">
-                        <label>
-                            <input type="email" name="email" placeholder="E-mail" novalidate />
-                        </label>
+                <form class="footer-form">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail" novalidate />
+                    </label>
                     <button type="submit" class="footer-button">
                         Подписаться
-                    <svg class="social-icon-footer " width="24" height="24">
-                        <use href="./images/svg/form-icon.svg#icon-send"></use>
-                    </svg>
+                        <svg class="social-icon-footer " width="24" height="24">
+                            <use href="./images/svg/form-icon.svg#icon-send"></use>
+                        </svg>
                     </button>
-                    </form>
+                </form>
 
             </div>
-        
+
     </footer>
     <!--modal windows-->
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <button class="buttom-close" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <button class="buttom-close" data-modal-close>
 
-            <svg class="icon-close" width="11" height="11">
-                <use href="./images/close-new.svg#icon-close" class="icon-close" ></use>
-            </svg>
-        </button>
-      
-<!-- 
-    <form class="modal-form">
-    <h3 class="modal-title">
-        Оставьте свои данные, мы вам перезвоним
-    </h3>
+                <svg class="icon-close" width="11" height="11">
+                    <use href="./images/close-new.svg#icon-close" class="icon-close"></use>
+                </svg>
+            </button>
 
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="text" name="user-name" id="user-name" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#person-black">
-                </use>
-            </svg>
+ 
+            <form class="modal-form">
+                <div class="form-field">
+                    <label class="modal-ladel" for="username">Имя</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="text" name="username" id="username" autofocus>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#person-black"></use>
+                        </svg>
+                    </div>
+                </div>
 
-            <label for="user-name" class="modal-lable">
-                Имя
-            </label>
+                <div class="form-field">
+                    <label class="modal-ladel" for="tel">Телефон</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="tel" name="tel" id="tel">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label class="modal-ladel" for="email">Почта</label>
+                    <div class="modal-position">
+                        <input class="modal-input" type="email" name="email" id="email">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/svg/form-icon.svg#email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field feedback">
+                    <label class="modal-ladel" for="username">Комментарий</label>
+                    <textarea class="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </div>
+
+                <label class="checkbox-label">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="checkbox" />
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="checkbox-link link">
+                        Условия договора
+                    </a>
+                </label>
+
+                <button type="submit" class="modal-form-button">
+                    Отправить
+                </button>
+            </form>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script>
+        (() => {
 
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="tel" name="user-tel" id="user-tel" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#phone-black">
-                </use>
-            </svg>
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
 
-            <label for="user-tel" class="modal-lable">
-                Телефон
-            </label>
-        </div>
-    </div>
-
-    <div class="modal-unit">
-        <div class="modal-unit-group">
-            <input type="email" name="user-mail" id="user-mail" class="modal-unit-input" placeholder=" " />
-            <svg class="modal-unit-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#email-black">
-                </use>
-            </svg>
-
-            <label for="user-mail" class="modal-lable">
-                Почта
-            </label>
-        </div>
-    </div>
-
-    <div class="modal-unit">
-        <textarea name="user-comment" id="user-comment" class="user-comment" rows="8" placeholder=" "></textarea>
-        <label for="user-comment" class="modal-aria-lable">
-            Комментарий
-        </label>
-    </div>
-
-        
-      
-       
-<label for="modal-checkbox" class="modal-checkbox-policy">
-    <input type="checkbox" name="modal-checkbox" class="modal-checkbox" id="modal-checkbox" />
-    <span class="checkbox-icon-span"></span>
-
-    Соглашаюсь с рассылкой и принимаю&nbsp;
-    <a href="" class="modal-link" id="modal-link"> Условия договора</a>
-</label>
-
-    <button type="submit" id="form-submit" class="btn btn-modal">
-        Отправить
-    </button>
-</form> 
--->
-<form class="modal-form">
-    <div class="form-field">
-        <label class="modal-ladel" for="username">Имя</label>
-        <div class="modal-position">
-            <input class="modal-input" type="text" name="username" id="username" autofocus>
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#person-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field">
-        <label class="modal-ladel" for="tel">Телефон</label>
-        <div class="modal-position">
-            <input class="modal-input" type="tel" name="tel" id="tel">
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#phone-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field">
-        <label class="modal-ladel" for="email">Почта</label>
-        <div class="modal-position">
-            <input class="modal-input" type="email" name="email" id="email">
-            <svg class="modal-icon" width="18" height="18">
-                <use href="./images/svg/form-icon.svg#email-black"></use>
-            </svg>
-        </div>
-    </div>
-
-    <div class="form-field feedback">
-        <label class="modal-ladel" for="username">Комментарий</label>
-        <textarea class="feedback" name="feedback" rows="5" placeholder="Введите текст"></textarea>
-    </div>
-
-    <label class="checkbox-label">
-        <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" value="checkbox" />
-        <span class="checkbox-icon"></span>
-        Соглашаюсь с рассылкой и принимаю
-        <a href="#" class="checkbox-link link">
-            Условия договора
-        </a>
-    </label>
-
-    <button type="submit" class="modal-form-button">
-        Отправить
-    </button>
-</form>
-    </div>
-</div>
-<script src="./js/modal.js"></script>
-<script>
-    (() => {
-
-        document
-            .querySelector('.js-speaker-form')
-            .addEventListener('submit', e => {
-
-                e.preventDefault();
+                    e.preventDefault();
 
 
 
-                new FormData(e.currentTarget).forEach((value, name) =>
+                    new FormData(e.currentTarget).forEach((value, name) =>
 
-                    console.log(`${name}: ${value}`),
+                        console.log(`${name}: ${value}`),
 
-                );
+                    );
 
-            });
+                });
 
-    })();
-</script>
+        })();
+    </script>
 
 </body>
 
 
-   
+
 </html>
